@@ -8,5 +8,5 @@ print """
 There's something going on here.
 With the three-quotes.
 We'll be able to print as much as we like.
-Even 4 lines if we want, or 5, or 6.
+Even 4 lines if we want, or 5, or 6!
 """
