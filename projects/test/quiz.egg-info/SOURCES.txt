@@ -1,0 +1,9 @@
+setup.py
+./bin/hello_world.py
+quiz/__init__.py
+quiz/hello_world.py
+quiz.egg-info/PKG-INFO
+quiz.egg-info/SOURCES.txt
+quiz.egg-info/dependency_links.txt
+quiz.egg-info/requires.txt
+quiz.egg-info/top_level.txt
