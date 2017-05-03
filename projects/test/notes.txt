@@ -1,0 +1,11 @@
+- setup.py -> With Distutils, this file provide metadata needed for creating a module distribution for
+our module. With this file, you can run "python setup.py sdist" to create a tar or zip file used for
+future module installation. After unpacking that file, a user of the module can install it via "python
+setup.py install". This should go to a folder responsible for housing third-party modules, but I will have
+to play with it to see what happens on my end.
+- Distribute - not used anymore #nice
+"http://stackoverflow.com/questions/6344076/differences-between-distribute-distutils-setuptools-and-distutils2"
+- nose -> used for unit testing but may be abandoned in the near future
+"http://nose.readthedocs.io/en/latest/"
+- virtualenv -> creates an environment that has its own installation directories, that share libraries with
+other virtualenv environments (addressing issues of dependencies and version, and indirect permissions)
