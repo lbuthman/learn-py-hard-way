@@ -4,3 +4,37 @@ from ex48 import lexicon
 
 def test_directions():
     assert_equal(lexicon.scan("north"), [('direction', 'north')])
+    result = lexicon.scan("north south east")
+    assert_equal(result, [('direction', 'north'),
+                            ('direction', 'south'),
+                            ('direction', 'east')])
+
+
+def test_verbs():
+    assert_equal(lexicon.scan("go"), [("verb", "go")])
+    result = lexicon.scan("go kill eat")
+    assert_equal(result, [("verb", "go"),
+                          ("verb", "kill"),
+                          ("verb", "eat")])
+
+
+def test_nouns():
+    assert_equal(lexicon.scan("bear"), [("noun", "bear")])
+    result = lexicon.scan("bear princess")
+    assert_equals(result, [("noun", "bear"),
+                           ("noun", "princess")])
+
+
+def test_numbers():
+    assert_equal(lexicon.scan("1234"), [("number", 1234)])
+    result = lexicon.scan("3 91234")
+    assert_equals(result, [("number", 3),
+                           ("number", 91234)])
+
+
+def test_errors():
+    assert_equal(lexicon.scan("ASDFASDF"), [("error", "ASDFASDF")])
+    result = lexicon.scan("bear IAS princess")
+    assert_equals(result, [("noun", "bear"),
+                           ("error", "IAS"),
+                           ("noun", "princess")])
