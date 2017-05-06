@@ -2,7 +2,7 @@ def scan(data):
 
     directions = ["north", "south", "east", "west"]
     verbs = ["go", "kill", "eat", "run"]
-    nouns = ["bear", "princess", "beet"]
+    nouns = ["bear", "princess", "beet", "dwight"]
     stops = ["the", "a", "and"]
 
     words = data.split(" ")
