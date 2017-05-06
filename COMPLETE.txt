@@ -1,0 +1,7 @@
+Marking work on this book complete, just short of finishing the exercises.
+
+Ex50 requires the use of web and their own fork from web, but web is old.
+
+The following exercises build on Ex50, so I think I have finished relevant and useful work for this book.
+
+I will move on to Django.
