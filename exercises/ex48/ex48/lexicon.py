@@ -1,8 +1,9 @@
 def scan(data):
 
     directions = ["north", "south", "east", "west"]
-    verbs = ["go", "kill", "eat"]
-    nouns = ["bear", "princess"]
+    verbs = ["go", "kill", "eat", "run"]
+    nouns = ["bear", "princess", "beet"]
+    stops = ["the", "a", "and"]
 
     words = data.split(" ")
     result = []
@@ -16,6 +17,9 @@ def scan(data):
             continue
         if word.lower() in nouns:
             result.append(("noun", word))
+            continue
+        if word.lower() in stops:
+            result.append(("stop", word))
             continue
         try:
             result.append(("number", int(word)))
